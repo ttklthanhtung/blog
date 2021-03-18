@@ -1,0 +1,180 @@
+/*
+ * Globals
+ */
+
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #0471a5;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.blog-nav {
+   background-color: #f58340;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  color: #cdddeb;
+		  
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav : a {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*LIST IMAGES*/
+ @media (min-width:768px) and (max-width:991px){.main #channel .content ul li a img{width:100%;height:40px}}
+ @media screen and (max-width:991px){.main #channel .content ul li {width:50%}}
+ 
+ @media screen and (max-width:650px){.main #player{height:250px}.main #player div{font-size:1.5rem}}.main #server{text-align:center}.main #server .server{cursor:pointer;border:none;background:#00b09f;border-radius:2px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.16);-khtml-box-shadow:0 2px 5px rgba(0,0,0,.16);-moz-box-shadow:0 2px 5px rgba(0,0,0,.16);-ms-box-shadow:0 2px 5px rgba(0,0,0,.16);-o-box-shadow:0 2px 5px rgba(0,0,0,.16);box-shadow:0 2px 5px rgba(0,0,0,.16);color:#fff;display:inline-block;font-weight:400;height:32px;line-height:32px;margin:0 3px 10px;padding:0 10px;font-size:1em;letter-spacing:.2px;text-transform:uppercase;-webkit-transition:all .1s ease-in-out 0s;-khtml-transition:all .1s ease-in-out 0s;-moz-transition:all .1s ease-in-out 0s;-ms-transition:all .1s ease-in-out 0s;-o-transition:all .1s ease-in-out 0s;transition:all .1s ease-in-out 0s}.main .info,.main .note{-webkit-border-radius:2px;-khtml-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px}.main #server .server:hover{-webkit-box-shadow:0 5px 11px rgba(0,0,0,.18);-khtml-box-shadow:0 5px 11px rgba(0,0,0,.18);-moz-box-shadow:0 5px 11px rgba(0,0,0,.18);-ms-box-shadow:0 5px 11px rgba(0,0,0,.18);-o-box-shadow:0 5px 11px rgba(0,0,0,.18);box-shadow:0 5px 11px rgba(0,0,0,.18);color:#f8f8f8;background:#43b0c3}#footer,#footer a{color:#fff}.main #server .server.active{background:#39A1B4}.main .note{position:relative;background:#e3e3e3;margin-bottom:10px;border-radius:2px;padding:10px 20px;line-height:1.6em}.main #channel,.main .info{background:#fff;overflow:hidden}.main .info{padding:10px 15px;border-radius:2px;border:1px solid #eee;-webkit-box-shadow:0 2px 0 #ECECEC;-khtml-box-shadow:0 2px 0 #ECECEC;-moz-box-shadow:0 2px 0 #ECECEC;-ms-box-shadow:0 2px 0 #ECECEC;-o-box-shadow:0 2px 0 #ECECEC;box-shadow:0 2px 0 #ECECEC}.main .info img{width:100px;float:left;margin-right:15px}.main .info p{line-height:1.6em;text-align:justify}.main #channel{margin-top:20px;-webkit-border-radius:2px;-khtml-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 3px 0 #ECECEC;-khtml-box-shadow:0 3px 0 #ECECEC;-moz-box-shadow:0 3px 0 #ECECEC;-ms-box-shadow:0 3px 0 #ECECEC;-o-box-shadow:0 3px 0 #ECECEC;box-shadow:0 3px 0 #ECECEC;margin-bottom:30px;padding-bottom:10px}.main #channel .tabs{border-bottom:1px solid #ddd;overflow:hidden}.main #channel .tabs div{display:block;float:left;text-transform:uppercase;padding:10px 11px;cursor:pointer;font-size:1.1em;-webkit-transition:all .1s ease-in-out 0s;-khtml-transition:all .1s ease-in-out 0s;-moz-transition:all .1s ease-in-out 0s;-ms-transition:all .1s ease-in-out 0s;-o-transition:all .1s ease-in-out 0s;transition:all .1s ease-in-out 0s}.main #channel .tabs div.active{background:#009688!important;color:#fff}.main #channel .tabs div:hover{background:#eee}.main #channel .content ul{display:none;list-style:none;padding:3px}.main #channel .content ul.active{display:block}.main #channel .content ul li{display:block;float:left;}.main #channel .content ul li a{margin:3px;padding:5px;border:1px solid #eee;-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;-webkit-transition:border .2s ease-in-out 0s;-khtml-transition:border .2s ease-in-out 0s;-moz-transition:border .2s ease-in-out 0s;-ms-transition:border .2s ease-in-out 0s;-o-transition:border .2s ease-in-out 0s;transition:border .2s ease-in-out 0s;overflow:hidden;display:block}.main #channel .content ul li a img{width:100%;height:50px}.main #channel .content ul li a.active,.main #channel .content ul li a:hover{border-color:#009688}
+
+  
