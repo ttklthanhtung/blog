@@ -102,8 +102,8 @@ set "eline=echo: &call :_color %Red% "==== ERROR ====" &echo:"
 
 if %winbuild% LSS 7600 (
 %nceline%
-echo Unsupported OS version detected.
-echo Project is supported only for Windows 7/8/8.1/10/11 and their Server equivalent.
+echo OS cua ban khong duoc ho tro.
+echo Du an nay chi ho tro cho Windows 7/8/8.1/10/11 and their Server equivalent.
 goto MASend
 )
 
